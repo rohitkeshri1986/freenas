@@ -2,7 +2,7 @@
 .include "build/hooks/Makefile"
 .endif
 
-NANO_LABEL?=FreeNAS
+NANO_LABEL?=TrueNAS
 VERSION?=9.3.1-MASTER
 TRAIN?=${NANO_LABEL}-9.3-Nightlies
 
