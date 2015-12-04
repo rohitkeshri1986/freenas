@@ -12,7 +12,7 @@ SRCS_MANIFEST="${AVATAR_ROOT}/FreeBSD/repo-manifest"
 if is_truenas ; then
     # Additional repos to checkout for build
     ADDL_REPOS="$ADDL_REPOS TRUENAS_COMPONENTS"
-
+    : ${GIT_TRUENAS_COMPONENTS_BRANCH=vcenter_testing}
     : ${GIT_TRUENAS_COMPONENTS_REPO=ssh://git@github.com/iXsystems/truenas.git}
     : ${GIT_TRUENAS_COMPONENTS_CHECKOUT_PATH="${AVATAR_ROOT}/nas_source/truenas-components"}
 
